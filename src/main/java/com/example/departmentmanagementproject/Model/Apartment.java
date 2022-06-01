@@ -1,7 +1,6 @@
 package com.example.departmentmanagementproject.Model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.hibernate.annotations.GeneratorType;
 
 import javax.persistence.*;
 import java.util.List;
@@ -37,6 +36,8 @@ public class Apartment {
     List<ApartmentDetail> lstApartmentDetails;
 
     public Apartment(){}
+
+    public Apartment(int i){}
 
     public Apartment(WaterElectricBill waterElectricBill, int floor, int roomNumber, double square, int roomQuantity,
                      double price, Resident owner, List<ApartmentDetail> lstApartmentDetails) {
